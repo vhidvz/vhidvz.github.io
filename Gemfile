@@ -15,5 +15,6 @@ group :jekyll_plugins do
   gem "jekyll-gist"
   gem "jekyll-feed"
   gem "jemoji"
+  gem "jekyll-redirect-from"
   gem "jekyll-include-cache"
 end

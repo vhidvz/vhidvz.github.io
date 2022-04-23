@@ -1,7 +1,8 @@
 ---
 title: "About"
 excerpt: "Hi, my name’s Vahid, I’m a senior full-stack developer living in Iran, Tehran"
-permalink: /
+permalink: /about/
+redirect_from: /
 ---
 
 Hi, my name’s Vahid, I’m a senior full-stack developer living in Iran, Tehran I have professional experience in making web apps from small projects to large-scale projects since 2013.
