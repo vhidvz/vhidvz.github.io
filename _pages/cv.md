@@ -90,7 +90,7 @@ toc_sticky: true
 [Python](#skills){: .btn .btn--inverse}
 [TypeScript](#skills){: .btn .btn--inverse}
 [PHP](#skills){: .btn .btn--inverse}
-[tensorflow](#skills){: .btn .btn--inverse}
+[Tensorflow](#skills){: .btn .btn--inverse}
 [Jest](#skills){: .btn .btn--inverse}
 [Scikit-Learn](#skills){: .btn .btn--inverse}
 [Keras](#skills){: .btn .btn--inverse}
@@ -110,8 +110,7 @@ toc_sticky: true
 [CI/CD](#skills){: .btn .btn--inverse}
 [Docker](#skills){: .btn .btn--inverse}
 [Kubernetes](#skills){: .btn .btn--inverse}
-[Git](#skills){: .btn .btn--inverse}
-[gitflow](#skills){: .btn .btn--inverse}
+[GitFlow](#skills){: .btn .btn--inverse}
 [SOLID](#skills){: .btn .btn--inverse}
 [DRY/WET](#skills){: .btn .btn--inverse}
 [Crawling](#skills){: .btn .btn--inverse}
