@@ -113,6 +113,12 @@ analytics:
 include:
   - _pages
 
+# Collections
+collections:
+  projects:
+    output: true
+    permalink: /:collection/:title/
+
 defaults:
   # _posts
   - scope:
@@ -139,3 +145,23 @@ defaults:
       share: true
       related: false
       toc: false
+  # _projects
+  - scope:
+      path: ""
+      type: projects
+    values:
+      layout: single
+      author_profile: true
+      read_time: false
+      comments: true
+      share: true
+      related: false
+      toc: true
+      toc_sticky: true
+
+# category_archive:
+#   type: liquid
+#   path: /categories/
+tag_archive:
+  type: liquid
+  path: /tags/
