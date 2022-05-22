@@ -8,7 +8,7 @@ tags:
   - access-control
 ---
 
-Related to [abac](https://vhidvz.github.io/blog/post-abac/) post.
+__Related to [*abac*](https://vhidvz.github.io/blog/post-abac/) post.__
 
 [![npm](https://img.shields.io/npm/v/abacl)](https://www.npmjs.com/package/abacl)
 [![GitHub](https://img.shields.io/github/license/vhidvz/abacl?style=flat)](https://vhidvz.github.io/abacl/)
