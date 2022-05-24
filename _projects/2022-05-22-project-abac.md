@@ -21,7 +21,7 @@ The Attribute-Based Access-Control Library let you define five `can` access abil
 
 - Who can? the answer is `role` - Like RBAC a user can have roles.
 - How can it? the answer is `action` - You can define `any` actions you want (scoped).
-- What can? the answer is `subject` - You can define `all` subjects you want (scoped).
+- What can? the answer is `object` - You can define `all` objects you want (scoped).
 - Where can? the answer is `location` - With IP and CIDR you can find the location of users.
 - When can it? the answer is `time` - Subject availabilities with cron expression and a duration.
 
@@ -41,25 +41,25 @@ Define your user abilities as a json array, so you can store it in your database
 import { AccessAbility } from 'abacl';
 
 const abilities: AccessAbility[] = [
-  { // the admin ability can do `any`thing with `all` subjects
+  { // the admin ability can do `any`thing with `all` objects
     role: 'admin',
     action: 'any',
-    subject: 'all',
+    object: 'all',
   },
   { // ability scoped by published articles
     role: 'guest',
     action: 'read',
-    subject: 'article:published',
+    object: 'article:published',
   },
   { // the manager can to `any`thing with articles
     role: 'manager',
     action: 'any',
-    subject: 'article',
+    object: 'article',
   },
   { // the user can create own articles (scoped by own)
     role: 'user',
     action: 'create:own',
-    subject: 'article',
+    object: 'article',
     field: ['*', '!owner'], // filters the input data of the user 
     location: ['127.0.0.1', '192.168.1.0/24'],
     time: [
@@ -72,23 +72,23 @@ const abilities: AccessAbility[] = [
   {
     role: 'user',
     action: 'read:own',
-    subject: 'article',
+    object: 'article',
   },
   { // the user can read shared articles without `id` properties 
     role: 'user',
     action: 'read:shared',
-    subject: 'article',
+    object: 'article',
     filter: ['*', '!id'], // filters output data
   },
   {
     role: 'user',
     action: 'delete:own',
-    subject: 'article',
+    object: 'article',
   },
   {
     role: 'user',
     action: 'update:own',
-    subject: 'article',
+    object: 'article',
     field: ['*', '!owner'],
   },
 ];
