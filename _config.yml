@@ -1,5 +1,5 @@
 # theme                  : "minimal-mistakes-jekyll"
-remote_theme           : "mmistakes/minimal-mistakes"
+remote_theme: "mmistakes/minimal-mistakes"
 
 minimal_mistakes_skin: default
 
@@ -20,7 +20,7 @@ title: "Vahid V."
 email: vhid.vz@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   I always enjoy developing and I have been engaging in this field
-  professionally since 2013. I am an expert in Python and TypeScript.
+  professionally since 2014. I am an expert in Python and TypeScript.
   enthusiastically explore new technologies for efficiency,
   always looking for new ways to solve the problem as efficiently as possible.
 twitter_username: VhidVZ
@@ -59,10 +59,10 @@ whitelist:
   - jekyll-include-cache
 
 author:
-  name      : "Vahid V."
-  avatar    : "/assets/images/profile.jpg"
-  bio       : "I'm a Full-Stack Developer with gorgeous experience in Back-End Engineering"
-  location  : "Iran, Tehran"
+  name: "Vahid V."
+  avatar: "/assets/images/profile.jpg"
+  bio: "I'm a Full-Stack Developer with gorgeous experience in Back-End Engineering"
+  location: "Iran, Tehran"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
@@ -94,18 +94,18 @@ repository: "vhidvz/vhidvz.github.io"
 comments:
   provider: "giscus"
   giscus:
-    repo_id              : "R_kgDOHOQjMw"
-    category_id          : "DIC_kwDOHOQjM84COvOO"
-    mapping              : "pathname"
-    reactions_enabled    : "1"
-    input-position       : "top"
-    theme                : "light"
-    lang                 : "en"
-    loading              : "lazy"
+    repo_id: "R_kgDOHOQjMw"
+    category_id: "DIC_kwDOHOQjM84COvOO"
+    mapping: "pathname"
+    reactions_enabled: "1"
+    input-position: "top"
+    theme: "light"
+    lang: "en"
+    loading: "lazy"
 
 social:
-  type:  Person
-  name:  Vahid V.
+  type: Person
+  name: Vahid V.
   links:
     - "https://twitter.com/VhidVZ/"
     - "https://github.com/vhidvz/"
