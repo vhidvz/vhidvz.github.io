@@ -3,9 +3,9 @@ title: "Post: Clean Code"
 categories:
   - Blog
 tags:
-  - abac
-  - authorization
-  - access-control
+  - code
+  - clean
+  - clean-code
 ---
 
 __Summary of 'Clean code' by Robert C. Martin__
