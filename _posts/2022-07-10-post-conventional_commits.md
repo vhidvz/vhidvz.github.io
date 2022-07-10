@@ -81,7 +81,7 @@ The `footer` should contain any information about __Breaking Changes__ and is al
 
 * Is an __optional__ part of the format
 * __optionally__ reference an issue by its id.
-* __Breaking Changes__ should start with the word `BREAKING CHANGES:` followed by space or two newlines. The rest of the commit message is then used for this.
+* __Breaking Changes__ should start with the word `BREAKING CHANGES:` followed by space or two newlines. Optionally they may be emphasised by appending a `!` after the type and scope.
 
 Footers are written using the format:
 
