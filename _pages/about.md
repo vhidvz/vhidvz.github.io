@@ -22,10 +22,7 @@ I have worked at several companies gaining teamwork and leadership skills. I con
 - Microservices design pattern is powered by the `gRPC` and other technologies such as `MQTT`.
   {: .text-justify}
 
-- Improving my development process by writing more tests for my code (unit and integration) by using TDD (Test-driven development) process.
-  {: .text-justify}
-
-- Improving my development process by writing more tests for my code (unit and integration) by using TDD (Test-driven development) process.
+- Improving my development process by writing more tests for my code (unit and integration) by using TDD (Test-driven development) process and [Skeleton](https://en.wikipedia.org/wiki/Skeleton_(computer_programming)) programming.
   {: .text-justify}
 
 - Practice and increase my knowledge of [software design patterns](https://en.wikipedia.org/wiki/Software_design_pattern) and methodologies ([twelve-factor](https://12factor.net/), ...) for building software applications as a service.
