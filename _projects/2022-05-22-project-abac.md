@@ -14,7 +14,6 @@ __Related to [*abac*](https://vhidvz.github.io/blog/post-abac/) post.__
 [![Coverage](https://raw.githubusercontent.com/vhidvz/abacl/master/coverage-badge.svg)](https://htmlpreview.github.io/?https://github.com/vhidvz/abacl/blob/master/docs/coverage/lcov-report/index.html)
 ![Snyk Vulnerabilities for GitHub Repo](https://img.shields.io/snyk/vulnerabilities/github/vhidvz/abacl)
 ![npm](https://img.shields.io/npm/dm/abacl)
-![Libraries.io dependency status for latest release](https://img.shields.io/librariesio/release/npm/abacl)
 ![node-current](https://img.shields.io/node/v/abacl)
 [![GitHub](https://img.shields.io/github/license/vhidvz/abacl?style=flat)](https://vhidvz.github.io/abacl/)
 [![semantic-release: angular](https://img.shields.io/badge/semantic--release-nodejs-e10079?logo=semantic-release)](https://github.com/semantic-release/semantic-release)
@@ -25,7 +24,7 @@ __Related to [*abac*](https://vhidvz.github.io/blog/post-abac/) post.__
 
 The Attribute-Based Access-Control Library let you define five `can` access ability:
 
-- Who can? the answer is `role` - Like RBAC a user can have roles.
+- Who can? the answer is `subject` - Like RBAC a user can have multiple roles.
 - How can it? the answer is `action` - You can define `any` actions you want (scoped).
 - What can? the answer is `object` - You can define `all` objects you want (scoped).
 - Where can? the answer is `location` - With IP and CIDR you can find the location of users.
@@ -46,7 +45,7 @@ npm install --save abacl
 Define your user abilities as a json array, so you can store it in your database:
 
 ```ts
-import { AccessAbility } from 'abacl';
+import { Ability } from 'abacl';
 
 enum Role {
   Admin = 'admin',
@@ -55,24 +54,24 @@ enum Role {
   Manager = 'manager',
 }
 
-const abilities: AccessAbility<Role>[] = [
+const abilities: Ability<Role>[] = [
   {
-    role: Role.Admin,
+    subject: Role.Admin,
     action: 'any',
     object: 'all',
   },
   {
-    role: Role.Guest,
+    subject: Role.Guest,
     action: 'read',
     object: 'article:published',
   },
   {
-    role: Role.Manager,
+    subject: Role.Manager,
     action: 'any',
     object: 'article',
   },
   {
-    role: Role.User,
+    subject: Role.User,
     action: 'create:own',
     object: 'article',
     field: ['*', '!owner'],
@@ -85,23 +84,23 @@ const abilities: AccessAbility<Role>[] = [
     ],
   },
   {
-    role: Role.User,
+    subject: Role.User,
     action: 'read:own',
     object: 'article',
   },
   {
-    role: Role.User,
+    subject: Role.User,
     action: 'read:shared',
     object: 'article',
     filter: ['*', '!id'],
   },
   {
-    role: Role.User,
+    subject: Role.User,
     action: 'delete:own',
     object: 'article',
   },
   {
-    role: Role.User,
+    subject: Role.User,
     action: 'update:own',
     object: 'article',
     field: ['*', '!owner'],
@@ -114,7 +113,7 @@ Article and User definition objects:
 ```ts
 const user = {
   id: 1,
-  role: Role.User,
+  subject: Role.User,
   ip: '192.168.1.100',
 };
 
@@ -131,8 +130,25 @@ Create a new access control object, then get the permission grants:
 ```ts
 import AccessControl from 'abacl';
 
-const ac = new AccessControl(abilities);
-const permission = ac.can([user.role], 'read', 'article');
+// The `strict` `AccessControlOption` control the scoped functionality 
+// default strict value is true, you can change it on the `can` method
+const ac = new AccessControl(abilities, { strict: false });
+const permission = ac.can([user.subject], 'read', 'article');
+
+// change strict mode dynamically, Example:
+// const strictPermission = ac.can([user.subject], 'read', 'article', undefined, { strict: true });
+
+/**
+ *   it('should change strict mode dynamically', () => {
+ *     const ac = new AccessControl(abilities, { strict: true });
+ * 
+ *     expect(ac.can([Role.User], 'read', 'article:published').granted).toBeFalsy();
+ * 
+ *     // After changing strict mode
+ *     expect(ac.can([Role.User], 'read', 'article:published', undefined, { strict: false }).granted).toBeTruthy();
+ *   });
+ * 
+ * */
 
 if (permission.granted) {
   // default scope for action and object is `any` and `all`
@@ -164,14 +180,21 @@ Time and location access check example:
 ```ts
 import { Permission } from 'abacl';
 
-const ac = new AccessControl(abilities);
+// default `strict` value is true
+const ac = new AccessControl(abilities, { strict: true });
 
-const permission = ac.can([user.role], 'create', 'article', (perm: Permission) => {
-  return perm.grant().location(user.ip) && perm.grant().time();
+const permission = ac.can([user.subject], 'create', 'article', (perm: Permission) => {
+  return perm.grant('own').location(user.ip) && perm.grant('own').time();
 });
 
+// it('should replace granted on falsy', () => {
+//   const ac = new AccessControl<string>(abilities);
+//   const permission = ac.can([Role.Guest, Role.User], 'make', 'nothing', () => true);
+//   expect(permission.granted).toBeTruthy();
+// });
+
 if (permission.granted) {
-  const inputData = permission.grant().field(article);
+  const inputData = permission.grant('.*').field(article);
 
   // the `inputData` has not `owner` property
   // do something and then return results to user
