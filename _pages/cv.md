@@ -121,6 +121,7 @@ toc_sticky: true
 [GitFlow](#skills){: .btn .btn--inverse}
 [SOLID](#skills){: .btn .btn--inverse}
 [DRY/WET](#skills){: .btn .btn--inverse}
+[Clean Code](#skills){: .btn .btn--inverse}
 [Crawling](#skills){: .btn .btn--inverse}
 [Selenium](#skills){: .btn .btn--inverse}
 [Web Scraping](#skills){: .btn .btn--inverse}
