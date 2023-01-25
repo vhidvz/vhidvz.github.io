@@ -116,6 +116,7 @@ toc_sticky: true
 [JQuery](#skills){: .btn .btn--inverse}
 [CI/CD](#skills){: .btn .btn--inverse}
 [SSR/CSR](#skills){: .btn .btn--inverse}
+[SocketIO](#skills){: .btn .btn--inverse}
 [Docker](#skills){: .btn .btn--inverse}
 [Kubernetes](#skills){: .btn .btn--inverse}
 [GitFlow](#skills){: .btn .btn--inverse}
