@@ -84,13 +84,19 @@ toc_sticky: true
 
 # SKILLS
 
-[MySQL](#skills){: .btn .btn--inverse}
+[TypeScript](#skills){: .btn .btn--inverse}
+[Python](#skills){: .btn .btn--inverse}
+[Rust](#skills){: .btn .btn--inverse}
 [MongoDB](#skills){: .btn .btn--inverse}
 [Redis](#skills){: .btn .btn--inverse}
-[Python](#skills){: .btn .btn--inverse}
-[TypeScript](#skills){: .btn .btn--inverse}
+[MQTT](#skills){: .btn .btn--inverse}
+[K6](#skills){: .btn .btn--inverse}
+[gRPC](#skills){: .btn .btn--inverse}
 [PHP](#skills){: .btn .btn--inverse}
 [Tensorflow](#skills){: .btn .btn--inverse}
+[GraphQL](#skills){: .btn .btn--inverse}
+[RESTful](#skills){: .btn .btn--inverse}
+[TDD/BDD](#skills){: .btn .btn--inverse}
 [Jest](#skills){: .btn .btn--inverse}
 [Scikit-Learn](#skills){: .btn .btn--inverse}
 [Keras](#skills){: .btn .btn--inverse}
@@ -99,6 +105,7 @@ toc_sticky: true
 [Shell Scripting](#skills){: .btn .btn--inverse}
 [Laravel](#skills){: .btn .btn--inverse}
 [ExpressJs](#skills){: .btn .btn--inverse}
+[MySQL](#skills){: .btn .btn--inverse}
 [NestJS](#skills){: .btn .btn--inverse}
 [Vue](#skills){: .btn .btn--inverse}
 [ElectronJS](#skills){: .btn .btn--inverse}
@@ -122,8 +129,4 @@ toc_sticky: true
 [SCRUM](#skills){: .btn .btn--inverse}
 [Kanban](#skills){: .btn .btn--inverse}
 [JWT](#skills){: .btn .btn--inverse}
-[GraphQL](#skills){: .btn .btn--inverse}
-[RESTful](#skills){: .btn .btn--inverse}
-[TDD/BDD](#skills){: .btn .btn--inverse}
-[MQTT](#skills){: .btn .btn--inverse}
-[K6](#skills){: .btn .btn--inverse}
+[Linux](#skills){: .btn .btn--inverse}
