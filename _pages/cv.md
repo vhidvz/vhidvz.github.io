@@ -97,11 +97,13 @@ toc_sticky: true
 [GraphQL](#skills){: .btn .btn--inverse}
 [RESTful](#skills){: .btn .btn--inverse}
 [TDD/BDD](#skills){: .btn .btn--inverse}
+[PWA](#skills){: .btn .btn--inverse}
 [Jest](#skills){: .btn .btn--inverse}
 [Scikit-Learn](#skills){: .btn .btn--inverse}
 [Keras](#skills){: .btn .btn--inverse}
 [HTML/CSS](#skills){: .btn .btn--inverse}
 [C/C++](#skills){: .btn .btn--inverse}
+[WebRTC](#skills){: .btn .btn--inverse}
 [Shell Scripting](#skills){: .btn .btn--inverse}
 [Laravel](#skills){: .btn .btn--inverse}
 [ExpressJs](#skills){: .btn .btn--inverse}
