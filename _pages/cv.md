@@ -21,6 +21,18 @@ toc_sticky: true
 
 # EXPERIENCE
 
+**RahkarSanat | راهکار صنعت**
+<br/> _December 2022 – Present_
+<br/><br/> **Technical Consultant**
+<br/><br/> Experiences: TypeScript, MongoDB, NestJS, Redis, GraphQL, Mqtt, GitFlow, Kubernetes, SocketIO, gRPC, ...
+{: .notice}
+
+**AriaCo | آریاکو**
+<br/> _April 2020 – March 2023_
+<br/><br/> **Full Stack Engineer**
+<br/><br/> Experiences: TypeScript, MongoDB, NestJS, Redis, PWA, Mqtt, Scrum, Jest, K6, ...
+{: .notice}
+
 **Ayandeh-Pajoohan | آینده پژوهان پیشرو دانش و فناوری سلامت**
 <br/> _November 2020 – February 2022_
 <br/><br/> **Back-End Engineer**
