@@ -8,17 +8,6 @@ toc_sticky: true
 
 [Download PDF](/assets/files/vhidvz-cv.pdf){: .btn .btn--info .btn--x-large}
 
-# EDUCATION
-
-**University of Sistan and Baluchestan** <br/> _September 2016 - September 2018_
-<br/><br/> **Master of computer science** in the field of _Intelligent systems_.
-<br/><br/> **Thesis**: K-Nearest Neighbors and Support Vector Machine Classification using Deep Neural Network Representation.
-{: .notice}
-
-**Vali-e-Asr University Of Rafsanjan** <br/> _September 2012 - September 2015_
-<br/><br/> **Talented Undergraduate Student** in the field of _information technology engineering_ at the Vali-e-Asr University of Rafsanjan.
-{: .notice}
-
 # EXPERIENCE
 
 **RahkarSanat | راهکار صنعت**
@@ -88,6 +77,17 @@ toc_sticky: true
 <br/><br/>Department of Computer Engineering, Vali-e-Asr University Of Rafsanjan, Kerman, Iran.
 {: .notice}
 
+# EDUCATION
+
+**University of Sistan and Baluchestan** <br/> _September 2016 - September 2018_
+<br/><br/> **Master of computer science** in the field of _Intelligent systems_.
+<br/><br/> **Thesis**: K-Nearest Neighbors and Support Vector Machine Classification using Deep Neural Network Representation.
+{: .notice}
+
+**Vali-e-Asr University Of Rafsanjan** <br/> _September 2012 - September 2015_
+<br/><br/> **Talented Undergraduate Student** in the field of _information technology engineering_ at the Vali-e-Asr University of Rafsanjan.
+{: .notice}
+
 # WORKSHOP
 
 **Workshop on modern translation methods**
@@ -102,6 +102,9 @@ toc_sticky: true
 [MongoDB](#skills){: .btn .btn--inverse}
 [Redis](#skills){: .btn .btn--inverse}
 [MQTT](#skills){: .btn .btn--inverse}
+[Kafka](#skills){: .btn .btn--inverse}
+[EMQX](#skills){: .btn .btn--inverse}
+[RabbitMQ](#skills){: .btn .btn--inverse}
 [K6](#skills){: .btn .btn--inverse}
 [gRPC](#skills){: .btn .btn--inverse}
 [PHP](#skills){: .btn .btn--inverse}
