@@ -13,35 +13,35 @@ toc_sticky: true
 **RahkarSanat | راهکار صنعت**
 <br/> _December 2022 – Present_
 <br/><br/> **Technical Consultant**
-<br/><br/> Experiences: TypeScript, MongoDB, NestJS, Redis, GraphQL, Mqtt, GitFlow, Kubernetes, SocketIO, gRPC, ...
+<br/><br/> Skills: TypeScript, MongoDB, NestJS, Redis, GraphQL, Mqtt, SocketIO, gRPC, ...
 {: .notice}
 
 **AriaCo | آریاکو**
 <br/> _April 2020 – March 2023_
 <br/><br/> **Full Stack Engineer**
-<br/><br/> Experiences: TypeScript, MongoDB, NestJS, Redis, PWA, Mqtt, Scrum, Jest, K6, ...
+<br/><br/> Skills: TypeScript, MongoDB, NestJS, Redis, PWA, Mqtt, Scrum, Jest, K6, ...
 {: .notice}
 
 **Ayandeh-Pajoohan | آینده پژوهان پیشرو دانش و فناوری سلامت**
 <br/> _November 2020 – February 2022_
 <br/><br/> **Back-End Engineer**
-<br/><br/> Creative Company. <br/> Experiences: NestJS, Redis, WebRTC, OpenAPI, GraphQL, Jest, SocketIO, PWA, SSR/CSR, ...
+<br/><br/> Creative Company. <br/> Skills: NestJS, Redis, WebRTC, OpenAPI, GraphQL, Jest, SocketIO, PWA, SSR/CSR, ...
 {: .notice}
 
 **Yekta-Ertebat | یکتا ارتباط تعاملی پرتونما**
 <br/> _August 2019 – September 2020_
 <br/><br/> **Full-Stack Developer**
-<br/><br/> Knowledge-Based Company. <br/> Experiences: Agile, SCRUM, Trello, Kanban, Jira, Selenium, Vue2/3, MongoDB, Express.JS, ...
+<br/><br/> Knowledge-Based Company. <br/> Skills: Agile, SCRUM, Trello, Kanban, Jira, Selenium, Vue2/3, MongoDB, Express.JS, ...
 {: .notice}
 
 **Specialist Recruitment Test Referee (Fanavard)**
-<br/> _October 2017_
+<br/> _Kerman, October 2017_
 {: .notice}
 
 **Javan-Moj-e-Karmania | جوان موج کارمانیا**
 <br/> _September 2013 – August 2015_
 <br/><br/> **Full-Stack Developer**
-<br/><br/> Experiences: MySQL, PHP, Laravel, Bootstrap, AngularJS, RFID...
+<br/><br/> Skills: MySQL, PHP, Laravel, Bootstrap, AngularJS, RFID...
 {: .notice}
 
 # PUBLICATION
