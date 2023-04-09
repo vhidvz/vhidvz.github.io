@@ -1,11 +1,11 @@
 ---
 title: "About"
-excerpt: "Hi, my name’s Vahid, I’m a senior full-stack developer living in Iran, Tehran"
+excerpt: "Hi, my name’s Vahid, I’m a senior full-stack engineer living in Iran, Tehran"
 permalink: /about/
 redirect_from: /
 ---
 
-Hi, my name’s Vahid, I’m a senior full-stack developer with +9 years of gorgeous experience in back-end engineering I have professional experience in making web apps from small to large-scale projects.
+Hi, my name’s Vahid, I’m a senior full-stack engineer with +9 years of gorgeous experience in back-end engineering I have professional experience in making web apps from small to large-scale projects.
 {: .text-justify}
 
 I always enjoy developing and am an expert in Python and TypeScript. enthusiastically explore new technologies for my efficiency, always looking for new ways to solve problems as efficiently as possible.
