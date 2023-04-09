@@ -138,7 +138,6 @@ toc_sticky: true
 [Vue](#skills){: .btn .btn--inverse}
 [ElectronJS](#skills){: .btn .btn--inverse}
 [VSCode](#skills){: .btn .btn--inverse}
-[Linux](#skills){: .btn .btn--inverse}
 [Bootstrap](#skills){: .btn .btn--inverse}
 [Tailwind](#skills){: .btn .btn--inverse}
 [JQuery](#skills){: .btn .btn--inverse}
