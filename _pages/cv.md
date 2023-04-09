@@ -38,7 +38,7 @@ toc_sticky: true
 <br/> _Kerman, October 2017_
 {: .notice}
 
-**Javan-Moj-e-Karmania | جوان موج کارمانیا**
+**Tavan-Moj-e-Karmania | توان موج کارمانیا**
 <br/> _September 2013 – August 2015_
 <br/><br/> **Full-Stack Developer**
 <br/><br/> Skills: MySQL, PHP, Laravel, Bootstrap, AngularJS, RFID...
