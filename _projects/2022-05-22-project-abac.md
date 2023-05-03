@@ -14,7 +14,6 @@ __Related to [*abac*](https://vhidvz.github.io/blog/post-abac/) post.__
 [![Coverage](https://raw.githubusercontent.com/vhidvz/abacl/master/coverage-badge.svg)](https://htmlpreview.github.io/?https://github.com/vhidvz/abacl/blob/master/docs/coverage/lcov-report/index.html)
 ![Snyk Vulnerabilities for GitHub Repo](https://img.shields.io/snyk/vulnerabilities/github/vhidvz/abacl)
 ![npm](https://img.shields.io/npm/dm/abacl)
-![node-current](https://img.shields.io/node/v/abacl)
 [![GitHub](https://img.shields.io/github/license/vhidvz/abacl?style=flat)](https://vhidvz.github.io/abacl/)
 [![semantic-release: angular](https://img.shields.io/badge/semantic--release-nodejs-e10079?logo=semantic-release)](https://github.com/semantic-release/semantic-release)
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg)](https://github.com/prettier/prettier)
@@ -130,8 +129,9 @@ Create a new access control object, then get the permission grants:
 ```ts
 import AccessControl from 'abacl';
 
-// The `strict` `AccessControlOption` control the scoped functionality 
+// The `strict` `AccessControlOption` control the scoped functionality
 // default strict value is true, you can change it on the `can` method
+
 const ac = new AccessControl(abilities, { strict: false });
 const permission = ac.can([user.subject], 'read', 'article');
 
@@ -141,27 +141,30 @@ const permission = ac.can([user.subject], 'read', 'article');
 /**
  *   it('should change strict mode dynamically', () => {
  *     const ac = new AccessControl(abilities, { strict: true });
- * 
+ *
  *     expect(ac.can([Role.User], 'read', 'article:published').granted).toBeFalsy();
- * 
+ *
  *     // After changing strict mode
  *     expect(ac.can([Role.User], 'read', 'article:published', undefined, { strict: false }).granted).toBeTruthy();
  *   });
- * 
+ *
  * */
 
 if (permission.granted) {
   // default scope for action and object is `any` and `all`
 
-  if (permission.has('own')) { // Or pattern 'own:.*'
+  if (permission.has('own')) {
+    // Or pattern '.*:own'
     // user has read owned article objects
   }
 
-  if (permission.has('shared')) { // Or pattern 'shared:.*'
+  if (permission.has('shared')) {
+    // Or pattern '.*:shared'
     // user can access shared article objects
   }
 
-  if (permission.has('published')) { // Or pattern '.*:published'
+  if (permission.has('published')) {
+    // Or pattern '.*:published'
     // user can access shared article objects
   }
 
@@ -169,6 +172,7 @@ if (permission.granted) {
 
   // get grants by pattern 'shared' or 'shared:.*'
   // pattern: [action_scoped_regex]:[object_scoped_regex]
+  const response = permission.filter(article); // OR
   const response = permission.grant('shared').filter(article);
 
   // Now response has no `id` property so sent it to user
@@ -184,16 +188,12 @@ import { Permission } from 'abacl';
 const ac = new AccessControl(abilities, { strict: true });
 
 const permission = ac.can([user.subject], 'create', 'article', (perm: Permission) => {
+  return perm.location(user.ip) && perm.time(); // OR Alternative Method
   return perm.grant('own').location(user.ip) && perm.grant('own').time();
 });
 
-// it('should replace granted on falsy', () => {
-//   const ac = new AccessControl<string>(abilities);
-//   const permission = ac.can([Role.Guest, Role.User], 'make', 'nothing', () => true);
-//   expect(permission.granted).toBeTruthy();
-// });
-
 if (permission.granted) {
+  const inputData = permission.field(article); // OR
   const inputData = permission.grant('.*').field(article);
 
   // the `inputData` has not `owner` property

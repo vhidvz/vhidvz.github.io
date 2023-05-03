@@ -6,6 +6,8 @@ toc: true
 toc_sticky: true
 ---
 
+[LinkedIn](https://www.linkedin.com/in/vahid-vakili-484674235/){: .btn .btn--x-large}
+
 [PDF v1](/assets/files/vhidvz-cv_v1.pdf){: .btn .btn--info .btn--x-large}
 [PDF v2](/assets/files/vhidvz-cv_v2.pdf){: .btn .btn--info .btn--x-large}
 
@@ -16,7 +18,6 @@ toc_sticky: true
 <br/><br/> **Technical Consultant**
 <br/><br/> I still learn with a creative and kind team in the field of IOT and Fleet Management...
 <br/><br/> Skills: TypeScript, MongoDB, NestJS, Redis, GraphQL, Mqtt, SocketIO, gRPC, ...
-{: .notice}
 
 **AriaCo | آریاکو**
 <br/> _April 2020 – March 2023_
@@ -24,29 +25,40 @@ toc_sticky: true
 <br/><br/> Working in the field of financial technologies as a web full-stack engineer and software designer was an opportunity given to me by AriaCo company. During this time, I gained a lot of experience in the implementation of financial platforms as well as the execution of financial transactions and contradictions in the context of NoSQL technologies.
 <br/><br/> The big challenge I had in designing this platform was the number of client applications that should have the ability to accept each other while having an isolated environment in a common database, and also the architecture should be such that each client can express their own ideas.
 <br/><br/> Skills: TypeScript, MongoDB, NestJS, Redis, PWA, Mqtt, Scrum, Jest, K6, ...
-{: .notice}
+
+**Voluntary Work**
+<br/> _February 2022 - March 2022_
+<br/><br/> I was developed a portal to track and manage devices received by the maintenance department of the law enforcement command of Kerman province.
 
 **Ayandeh-Pajoohan | آینده پژوهان پیشرو دانش و فناوری سلامت**
-<br/> _November 2020 – February 2022_
+<br/> _November 2020 – January 2022_
 <br/><br/> **Back-End Engineer**
-<br/><br/> Among my best experience as a back-end engineer in cooperation with a software company is Ayandeh Pajoohan Company in health technology, which had a very open vision in the field of open source development and provided solutions with scientific support that encourage me to develop a BPMN engine.
+<br/><br/> As of my best experience as a back-end engineer in cooperation with a software company is Ayandeh Pajoohan Company in health technology, which had a very open vision in the field of open-source development and provided solutions with scientific support that encourage me to develop a BPMN engine.
 <br/><br/> 30TEB is a home care service application developed using PWA by VueJS and NestJS with NoSQL technologies, also provides service to the patient and attendant at their own location within the city using OverpassAPI and also provides the possibility of audio and video chat using WebSocket and WebRTC for communication between patients and doctors.
 <br/><br/> Among the challenges faced in this project was the use of Push Notification on the web platform in browsers specific for each user, which we achieved this difficulty by using the IndexedDB.
 <br/><br/> Skills: NestJS, Redis, WebRTC, OpenAPI, GraphQL, Jest, SocketIO, PWA, SSR/CSR, ...
-{: .notice}
 
 **Yekta-Ertebat | یکتا ارتباط تعاملی پرتونما**
-<br/> _August 2019 – September 2020_
+<br/> _August 2019 – October 2020_
 <br/><br/> **Full-Stack Developer**
 <br/><br/> Working with Yekta Ertebat was one of my most exciting collaborations with a growing and developing company. In this company, I had a great experience in team collaboration as a full-stack engineer.
 <br/><br/> Among the tasks that I was engaged in at Yekta Ertebat Company was the design and development of a store builder and, an integrated customer club. In addition, for some time I was engaged with scraping data using tools such as Appium and Selenium.
 <br/><br/> In the Kasbify project, using artificial intelligence as a customer behavior predictor to buy from a store or order from it was a challenge that we overcame by using a customized Q-learning reinforcement learning algorithm.
 <br/><br/> Skills: Agile, SCRUM, Trello, Kanban, Jira, Selenium, Vue2/3, MongoDB, Express.JS, ...
-{: .notice}
 
-**Specialist Recruitment Test Referee (Fanavard)**
-<br/> _Kerman, October 2017_
-{: .notice}
+**Houshvar-e-Aria | هوش مصنوعی هوشور آریا**
+<br/> _July 2018 – September 2019_
+<br/><br/> **Founder & CEO**
+<br/><br/> One of the most valuable experiences I've had is trying to build a new company and plan for growth and success with a small team, I found my talent and passion during this golden age.
+
+**Professional Development**
+<br/> _September 2015 - August 2018_
+<br/><br/> During this period, when I was a master's student in Computer Science in the field of Intelligent Systems, in this course I developed my professional experience with Python and used it in Machine Learning and Artificial Intelligence.
+<br/><br/> My focus at this time was on Metaheuristic Optimization and Deep Representation Learning with small data and some algorithms like SVM and KNN.
+
+**Specialist Recruitment Referee (Fanavard | فناورد)**
+<br/> _October 2017_
+<br/><br/> Kerman, Kerman Province, Iran
 
 **Tavan-Moj-e-Karmania | توان موج کارمانیا**
 <br/> _September 2013 – August 2015_
@@ -54,7 +66,6 @@ toc_sticky: true
 <br/><br/> During the period of cooperation with Tavan Moj Karmania company, I worked as a software designer and full-stack developer using PHP language and Laravel framework along with MySQL database and dashboard designed with Bootstrap and AngularJS.
 <br/><br/> Among the challenges, I was dealing with at this time was the real-time display of information resulting from location data registration using RFID. To overcome this problem, a set of required statistics is stored in the database for each data registration request, such as counting and totaling in discrete time blocks to show in the dashboard.
 <br/><br/> Skills: MySQL, PHP, Laravel, Bootstrap, AngularJS, RFID...
-{: .notice}
 
 # PUBLICATION
 
