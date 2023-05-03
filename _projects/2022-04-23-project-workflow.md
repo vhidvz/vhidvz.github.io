@@ -8,7 +8,7 @@ tags:
   - bpmn-engine
 ---
 
-__Related to [*workflow*](https://vhidvz.github.io/blog/post-workflow/) post.__
+__Related to [*workflow*](https://vhidvz.github.io/blog/post-workflow) post.__
 
 [![npm](https://img.shields.io/npm/v/@vhidvz/wfjs)](https://www.npmjs.com/package/@vhidvz/wfjs)
 [![Coverage](https://raw.githubusercontent.com/vhidvz/workflow-js/master/coverage-badge.svg)](https://htmlpreview.github.io/?https://github.com/vhidvz/workflow-js/blob/master/docs/coverage/lcov-report/index.html)

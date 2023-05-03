@@ -8,7 +8,7 @@ tags:
   - access-control
 ---
 
-__Related to [*abac*](https://vhidvz.github.io/blog/post-abac/) post.__
+__Related to [*abac*](https://vhidvz.github.io/blog/post-abac) post.__
 
 [![npm](https://img.shields.io/npm/v/abacl)](https://www.npmjs.com/package/abacl)
 [![Coverage](https://raw.githubusercontent.com/vhidvz/abacl/master/coverage-badge.svg)](https://htmlpreview.github.io/?https://github.com/vhidvz/abacl/blob/master/docs/coverage/lcov-report/index.html)

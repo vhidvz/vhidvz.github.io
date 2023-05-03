@@ -8,7 +8,7 @@ tags:
   - bpmn-engine
 ---
 
-__Related to [*workflow*](https://vhidvz.github.io/projects/project-workflow/) project.__
+__Related to [*workflow*](https://vhidvz.github.io/projects/project-workflow) project.__
 
 # What's workflow?
 
