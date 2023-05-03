@@ -6,7 +6,7 @@ toc: true
 toc_sticky: true
 ---
 
-[LinkedIn](https://www.linkedin.com/in/vahid-vakili-484674235/){: .btn .btn--primary .btn--x-large}
+[LinkedIn](https://www.linkedin.com/in/vahid-vakili-484674235){: .btn .btn--primary .btn--x-large}
 [PDF v1](/assets/files/vhidvz-cv_v1.pdf){: .btn .btn--info .btn--x-large}
 [PDF v2](/assets/files/vhidvz-cv_v2.pdf){: .btn .btn--info .btn--x-large}
 
