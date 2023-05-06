@@ -99,13 +99,13 @@ toc_sticky: true
 # TEACHING
 
 **Teaching Assistant**
-<br/>_September 2016 – February 2017_
-<br/><br/>Department of Information Technology, University of Sistan and Baluchestan, Zahedan, Iran.
+<br/> _September 2016 – February 2017_
+<br/><br/> Feculty of Information Technology, University of Sistan and Baluchestan, Zahedan, Iran.
 {: .notice}
 
 **Teaching Assistant**
-<br/>_September 2013 – September 2015_
-<br/><br/>Department of Computer Engineering, Vali-e-Asr University Of Rafsanjan, Kerman, Iran.
+<br/> _September 2013 – September 2015_
+<br/><br/> Feculty of Computer Engineering, Vali-e-Asr University Of Rafsanjan, Kerman, Iran.
 {: .notice}
 
 # EDUCATION
