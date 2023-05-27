@@ -33,7 +33,7 @@ toc_sticky: true
 {: .notice}
 
 **Ayandeh-Pajoohan | آینده پژوهان پیشرو دانش و فناوری سلامت**
-<br/> _November 2020 – January 2022_
+<br/> _July 2020 – December 2021_
 <br/><br/> **Back-End Engineer**
 <br/><br/> As of my best experience as a back-end engineer in cooperation with a software company is Ayandeh Pajoohan Company in health technology, which had a very open vision in the field of open-source development and provided solutions with scientific support that encourage me to develop a BPMN engine.
 <br/><br/> 30TEB is a home care service application developed using PWA by VueJS and NestJS with NoSQL technologies, also provides service to the patient and attendant at their own location within the city using OverpassAPI and also provides the possibility of audio and video chat using WebSocket and WebRTC for communication between patients and doctors.
@@ -50,14 +50,8 @@ toc_sticky: true
 <br/><br/> Skills: Agile, SCRUM, Trello, Kanban, Jira, Selenium, Vue2/3, MongoDB, Express.JS, ...
 {: .notice}
 
-**Houshvar-e-Aria | هوش مصنوعی هوشور آریا**
-<br/> _July 2018 – September 2019_
-<br/><br/> **Founder & CEO**
-<br/><br/> One of the most valuable experiences I've had is trying to build a new company and plan for growth and success with a small team, I found my talent and passion during this golden age.
-{: .notice}
-
 **Professional Development**
-<br/> _September 2015 - August 2018_
+<br/> _December 2016 - August 2019_
 <br/><br/> During this period, when I was a master's student in Computer Science in the field of Intelligent Systems, in this course I developed my professional experience with Python and used it in Machine Learning and Artificial Intelligence.
 <br/><br/> My focus at this time was on Metaheuristic Optimization and Deep Representation Learning with small data and some algorithms like SVM and KNN.
 {: .notice}
@@ -68,7 +62,7 @@ toc_sticky: true
 {: .notice}
 
 **Tavan-Moj-e-Karmania | توان موج کارمانیا**
-<br/> _September 2013 – August 2015_
+<br/> _September 2013 – September 2016_
 <br/><br/> **Full-Stack Developer**
 <br/><br/> During the period of cooperation with Tavan Moj Karmania company, I worked as a software designer and full-stack developer using PHP language and Laravel framework along with MySQL database and dashboard designed with Bootstrap and AngularJS.
 <br/><br/> Among the challenges, I was dealing with at this time was the real-time display of information resulting from location data registration using RFID. To overcome this problem, a set of required statistics is stored in the database for each data registration request, such as counting and totaling in discrete time blocks to show in the dashboard.
@@ -85,37 +79,37 @@ toc_sticky: true
 # RESEARCH
 
 [**Parallel computing and massive data processing with real-time streaming approach and its application in natural language processing**](http://dx.doi.org/10.13140/RG.2.2.12781.79849)
-<br/>Vali-e-Asr University Of Rafsanjan (September 2016)
+<br/>Vali-e-Asr University Of Rafsanjan
 {: .notice}
 
 [**Local fleet management system (Technical Report)**](http://dx.doi.org/10.13140/RG.2.2.19492.68485)
-<br/>Vali-e-Asr University Of Rafsanjan (August 2016)
+<br/>Vali-e-Asr University Of Rafsanjan
 {: .notice}
 
 [**Investigation of neurons simulators and comparison criteria**](https://www.researchgate.net/publication/317491757)
-<br/>Vali-e-Asr University Of Rafsanjan (September 2015)
+<br/>Vali-e-Asr University Of Rafsanjan
 {: .notice}
 
 # TEACHING
 
 **Teaching Assistant**
-<br/> _September 2016 – February 2017_
+<br/> _September 2017 – January 2018_
 <br/><br/> Feculty of Information Technology, University of Sistan and Baluchestan, Zahedan, Iran.
 {: .notice}
 
 **Teaching Assistant**
-<br/> _September 2013 – September 2015_
+<br/> _September 2013 – July 2016_
 <br/><br/> Feculty of Computer Engineering, Vali-e-Asr University Of Rafsanjan, Kerman, Iran.
 {: .notice}
 
 # EDUCATION
 
-**University of Sistan and Baluchestan** <br/> _September 2016 - September 2018_
+**University of Sistan and Baluchestan** <br/> _September 2016 - September 2019_
 <br/><br/> **Master of computer science** in the field of _Intelligent systems_.
 <br/><br/> **Thesis**: K-Nearest Neighbors and Support Vector Machine Classification using Deep Neural Network Representation.
 {: .notice}
 
-**Vali-e-Asr University Of Rafsanjan** <br/> _September 2012 - September 2015_
+**Vali-e-Asr University Of Rafsanjan** <br/> _September 2012 - June 2016_
 <br/><br/> **Talented Undergraduate Student** in the field of _information technology engineering_ at the Vali-e-Asr University of Rafsanjan.
 {: .notice}
 
