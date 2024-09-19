@@ -13,11 +13,8 @@ Hi, my name’s Vahid, I am a senior full-stack engineer with +10 years of exper
 - `Rust` as my second primary programming language.
   {: .text-justify}
 
-- Microservices design pattern is powered by the `gRPC` and other technologies such as `MQTT`.
+- Microservices design pattern is powered by the `gRPC` and other technologies such as `MQTT` and the [serverless](https://en.wikipedia.org/wiki/Serverless_computing) programming.
   {: .text-justify}
 
-- Improving my development process by writing more tests for my code (unit and integration) by using TDD (Test-driven development) process and the [skeleton](https://en.wikipedia.org/wiki/Skeleton_(computer_programming)) programming.
-  {: .text-justify}
-
-- Practice and increase my knowledge of [software design patterns](https://en.wikipedia.org/wiki/Software_design_pattern) and methodologies ([twelve-factor](https://12factor.net/), ...) for building software applications as a service.
+- Practice and increase my knowledge of [software design patterns](https://en.wikipedia.org/wiki/Software_design_pattern) and methodologies ([twelve-factor](https://12factor.net/), ...) for building software applications as a service and the [skeleton](https://en.wikipedia.org/wiki/Skeleton_(computer_programming)) programming.
   {: .text-justify}
