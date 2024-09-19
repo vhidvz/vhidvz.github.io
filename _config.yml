@@ -57,7 +57,6 @@ whitelist:
 author:
   name: "Vahid V."
   avatar: "/assets/images/profile.jpg"
-  bio: "I am a senior full-stack engineer with +10 years of experience in software design and development"
   location: "Iran, Tehran"
   links:
     - label: "Email"
