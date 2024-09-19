@@ -12,26 +12,42 @@ __Related to [*abac*](https://vhidvz.github.io/blog/post-abac) post.__
 
 [![npm](https://img.shields.io/npm/v/abacl)](https://www.npmjs.com/package/abacl)
 [![Coverage](https://raw.githubusercontent.com/vhidvz/abacl/master/coverage-badge.svg)](https://htmlpreview.github.io/?https://github.com/vhidvz/abacl/blob/master/docs/coverage/lcov-report/index.html)
-![Snyk Vulnerabilities for GitHub Repo](https://img.shields.io/snyk/vulnerabilities/github/vhidvz/abacl)
 ![npm](https://img.shields.io/npm/dm/abacl)
 [![GitHub](https://img.shields.io/github/license/vhidvz/abacl?style=flat)](https://vhidvz.github.io/abacl/)
-[![semantic-release: angular](https://img.shields.io/badge/semantic--release-nodejs-e10079?logo=semantic-release)](https://github.com/semantic-release/semantic-release)
-[![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg)](https://github.com/prettier/prettier)
 [![Gitter](https://badges.gitter.im/npm-abacl/community.svg)](https://gitter.im/npm-abacl/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 [![documentation](https://img.shields.io/badge/documentation-click_to_read-c27cf4)](https://vhidvz.github.io/abacl/)
 [![Build, Test and Publish](https://github.com/vhidvz/abacl/actions/workflows/npm-ci.yml/badge.svg)](https://github.com/vhidvz/abacl/actions/workflows/npm-ci.yml)
 
 The Attribute-Based Access-Control Library let you define five `can` access ability:
 
-- Who can? the answer is `subject` - Like RBAC a user can have multiple roles.
+- Who can? the answer is `subject` - Like RBAC a user can have multiple subjects.
 - How can it? the answer is `action` - You can define `any` actions you want (scoped).
 - What can? the answer is `object` - You can define `all` objects you want (scoped).
 - Where can? the answer is `location` - With IP and CIDR you can find the location of users.
 - When can it? the answer is `time` - objects availabilities with cron expression and a duration.
 
-## Quick Start Guide
+## ABAC vs RBAC?
 
-> Read more on defining `scoped` `action` and `object` ability in this [link](https://vhidvz.github.io/blog/post-abac/).
+| **Question**       | **RBAC**                          | **ABAC**                                    |
+| ------------------ | --------------------------------- | ------------------------------------------- |
+| Who can access?    | :white_check_mark:                | :heavy_check_mark: With more options        |
+| How can operate?   | :white_check_mark: CRUD           | :heavy_check_mark: With more options        |
+| What resource?     | :white_check_mark: Not Bad At All | :heavy_check_mark: More control on resource |
+| Where user can do? | :x:                               | :heavy_check_mark: Supported by IP and CIDR |
+| When user can do?  | :x:                               | :heavy_check_mark: Supported by CRON        |
+| Best structure?    | Monolithic Apps                   | PWA, Restful, GraphQL                       |
+| Suitable for?      | Small and medium projects         | Medium and large projects                   |
+
+### What's Scope?
+
+- look at carefully; scan.
+- assess or investigate something.
+
+In this library, We scoped `action`, `object` and `subject` which means you can have more control over these attributes.
+
+**Note:** if you want to have more control over the scoped attributes send at most three character of the first `subject`, `action`, or `object` for example `so` or `sub|obj` it means `subject` and `object` are in `strict` mode.
+
+## Quick Start Guide
 
 ### installation
 
@@ -39,12 +55,12 @@ The Attribute-Based Access-Control Library let you define five `can` access abil
 npm install --save abacl
 ```
 
-### Usage
+### Usage and Dangling
 
-Define your user abilities as a json array, so you can store it in your database:
+Define your user policies as a json array (so you can store it in your database):
 
 ```ts
-import { Ability } from 'abacl';
+import { Policy } from 'abacl';
 
 enum Role {
   Admin = 'admin',
@@ -53,7 +69,7 @@ enum Role {
   Manager = 'manager',
 }
 
-const abilities: Ability<Role>[] = [
+const policies: Policy<Role>[] = [
   {
     subject: Role.Admin,
     action: 'any',
@@ -62,6 +78,11 @@ const abilities: Ability<Role>[] = [
   {
     subject: Role.Guest,
     action: 'read',
+    object: 'article:published',
+  },
+  {
+    subject: Role.Guest,
+    action: 'create:own',
     object: 'article:published',
   },
   {
@@ -74,11 +95,11 @@ const abilities: Ability<Role>[] = [
     action: 'create:own',
     object: 'article',
     field: ['*', '!owner'],
-    location: ['127.0.0.1', '192.168.1.0/24'],
+    location: ['192.168.2.10', '192.168.1.0/24'],
     time: [
       {
-        cron_exp: '* * 8 * * *',
-        duration: 20 * 60 * 60,
+        cron_exp: '* * 7 * * *', // from 7 AM
+        duration: 9 * 60 * 60, // for 9 hours
       },
     ],
   },
@@ -91,7 +112,7 @@ const abilities: Ability<Role>[] = [
     subject: Role.User,
     action: 'read:shared',
     object: 'article',
-    filter: ['*', '!id'],
+    filter: ['*', '!owner'],
   },
   {
     subject: Role.User,
@@ -102,7 +123,7 @@ const abilities: Ability<Role>[] = [
     subject: Role.User,
     action: 'update:own',
     object: 'article',
-    field: ['*', '!owner'],
+    field: ['*', '!id', '!owner'],
   },
 ];
 ```
@@ -132,20 +153,20 @@ import AccessControl from 'abacl';
 // The `strict` `AccessControlOption` control the scoped functionality
 // default strict value is true, you can change it on the `can` method
 
-const ac = new AccessControl(abilities, { strict: false });
-const permission = ac.can([user.subject], 'read', 'article');
+const ac = new AccessControl(policies, { strict: false });
+const permission = await ac.can([user.subject], 'read', 'article');
 
 // change strict mode dynamically, Example:
-// const strictPermission = ac.can([user.subject], 'read', 'article', undefined, { strict: true });
+// const strictPermission = await ac.can([user.subject], 'read', 'article', { strict: true });
 
 /**
  *   it('should change strict mode dynamically', () => {
- *     const ac = new AccessControl(abilities, { strict: true });
+ *     const ac = new AccessControl(policies, { strict: true });
  *
- *     expect(ac.can([Role.User], 'read', 'article:published').granted).toBeFalsy();
+ *     expect(await ac.can([Role.User], 'read', 'article:published').granted).toBeFalsy();
  *
  *     // After changing strict mode
- *     expect(ac.can([Role.User], 'read', 'article:published', undefined, { strict: false }).granted).toBeTruthy();
+ *     expect(await ac.can([Role.User], 'read', 'article:published', { strict: false }).granted).toBeTruthy();
  *   });
  *
  * */
@@ -153,53 +174,50 @@ const permission = ac.can([user.subject], 'read', 'article');
 if (permission.granted) {
   // default scope for action and object is `any` and `all`
 
-  if (permission.has('own')) {
-    // Or pattern '.*:own'
+  if (permission.has({ action: 'read:own' })) {
     // user has read owned article objects
   }
 
-  if (permission.has('shared')) {
-    // Or pattern '.*:shared'
+  if (permission.has({ action: 'read:shared' })) {
     // user can access shared article objects
   }
 
-  if (permission.has('published')) {
-    // Or pattern '.*:published'
+  if (permission.has({ object: 'article:published' })) {
     // user can access shared article objects
   }
 
   // do something ...
 
-  // get grants by pattern 'shared' or 'shared:.*'
-  // pattern: [action_scoped_regex]:[object_scoped_regex]
-  const response = permission.filter(article); // OR
-  const response = permission.grant('shared').filter(article);
-
-  // Now response has no `id` property so sent it to user
+  // return filtered data based on the permission
+  const response = await permission.filter(article);
 }
 ```
 
 Time and location access check example:
 
 ```ts
-import { Permission } from 'abacl';
+import { AccessControl, Permission } from 'abacl';
 
 // default `strict` value is true
-const ac = new AccessControl(abilities, { strict: true });
+const ac = new AccessControl(policies, { strict: true });
 
-const permission = ac.can([user.subject], 'create', 'article', (perm: Permission) => {
-  return perm.location(user.ip) && perm.time(); // OR Alternative Method
-  return perm.grant('own').location(user.ip) && perm.grant('own').time();
+const permission = await ac.can([user.subject], 'create', 'article', {
+  callable: (perm: Permission) => {
+    return perm.location(user.ip) && perm.time();
+  },
 });
 
 if (permission.granted) {
-  const inputData = permission.field(article); // OR
-  const inputData = permission.grant('.*').field(article);
+  const inputData = await permission.field(article);
 
   // the `inputData` has not `owner` property
   // do something and then return results to user
 }
 ```
+
+## Related Project
+
+- [abacl-redis](https://www.npmjs.com/package/abacl-redis) redis storage driver.
 
 ## Thanks a lot
 

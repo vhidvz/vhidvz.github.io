@@ -5,13 +5,7 @@ permalink: /about/
 redirect_from: /
 ---
 
-Hi, my name’s Vahid, I’m a senior full-stack engineer with +9 years of gorgeous experience in back-end engineering I have professional experience in making web apps from small to large-scale projects.
-{: .text-justify}
-
-I always enjoy developing and am an expert in Python and TypeScript. enthusiastically explore new technologies for my efficiency, always looking for new ways to solve problems as efficiently as possible.
-{: .text-justify}
-
-I have worked at several companies gaining teamwork and leadership skills. I continue to be inspired to excel as a developer and am eager to join a team with similar goals.
+Hi, my name’s Vahid, I am a senior full-stack engineer with +10 years of experience in software design and development, specializing in creating web apps for projects of all sizes. I am passionate about Python and TypeScript, and I am also exploring the Rust programming language to further enhance my skill set. Constantly exploring new technologies to improve efficiency and seeking innovative solutions to complex problems are central to my approach. Throughout my career, I’ve gained valuable teamwork and leadership skills, and I’m eager to contribute to a team with similar ambitions and goals.
 {: .text-justify}
 
 # Currently Learning

@@ -1,4 +1,3 @@
-# theme                  : "minimal-mistakes-jekyll"
 remote_theme: "mmistakes/minimal-mistakes"
 
 minimal_mistakes_skin: default
@@ -9,20 +8,17 @@ baseurl: "/"
 locale: "en-US"
 encoding: "UTF-8"
 
-# breadcrumbs: true
-# breadcrumb_home_label : "Home"
-# breadcrumb_separator  : "/"
-
 date_format: "%Y-%m-%d"
 logo: "/assets/images/logo.png"
 
 title: "Vahid V."
 email: vhid.vz@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  I always enjoy developing and I have been engaging in this field
-  professionally since 2014. I am an expert in Python and TypeScript.
-  enthusiastically explore new technologies for efficiency,
-  always looking for new ways to solve the problem as efficiently as possible.
+  I am a senior full-stack engineer with +10 years of experience in software design and development,
+  specializing in creating web apps for projects of all sizes. I am passionate about Python and TypeScript, 
+  and I am also exploring the Rust programming language to further enhance my skill set. 
+  Constantly exploring new technologies to improve efficiency and seeking innovative solutions to complex problems are central to my approach.
+  Throughout my career, I’ve gained valuable teamwork and leadership skills, and I’m eager to contribute to a team with similar ambitions and goals.
 twitter_username: VhidVZ
 github_username: vhidvz
 
@@ -61,7 +57,7 @@ whitelist:
 author:
   name: "Vahid V."
   avatar: "/assets/images/profile.jpg"
-  bio: "I'm a Full-Stack Engineer with gorgeous experience in Back-End Engineering"
+  bio: "I am a senior full-stack engineer with +10 years of experience in software design and development"
   location: "Iran, Tehran"
   links:
     - label: "Email"
@@ -165,9 +161,6 @@ defaults:
       toc: true
       toc_sticky: true
 
-# category_archive:
-#   type: liquid
-#   path: /categories/
 tag_archive:
   type: liquid
   path: /blog/
