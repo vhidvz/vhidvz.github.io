@@ -14,7 +14,9 @@ logo: "/assets/images/logo.png"
 title: "Vahid V."
 email: vhid.vz@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-   As a senior full-stack engineer with over a decade of experience in software design and development, I thrive on building scalable and high-performance web applications. My expertise lies in Python and TypeScript, and I'm currently diving into Rust to push the boundaries of my technical skills. I’m passionate about crafting clean, efficient code and solving complex problems, regardless of project size. 
+   As a senior full-stack engineer with over a decade of experience in software design and development, I thrive on building scalable and high-performance web applications.
+   My expertise lies in Python and TypeScript, and I'm currently diving into Rust to push the boundaries of my technical skills.
+   I’m passionate about crafting clean, efficient code and solving complex problems, regardless of project size.
 twitter_username: VhidVZ
 github_username: vhidvz
 
