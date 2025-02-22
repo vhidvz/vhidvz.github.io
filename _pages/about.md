@@ -5,7 +5,7 @@ permalink: /about/
 redirect_from: /
 ---
 
- As a senior full-stack engineer with over a decade of experience in software design and development, I thrive on building scalable and high-performance web applications. My expertise lies in Python and TypeScript, and I'm currently diving into Rust to push the boundaries of my technical skills. I’m passionate about crafting clean, efficient code and solving complex problems, regardless of project size.
+As a senior full-stack engineer with over a decade of experience in software design and development, I thrive on building scalable and high-performance web applications. My expertise lies in Python and TypeScript, and I'm currently diving into Rust to push the boundaries of my technical skills. I’m passionate about crafting clean, efficient code and solving complex problems, regardless of project size.
 {: .text-justify}
 
 # Currently Learning
